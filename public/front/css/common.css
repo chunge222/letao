@@ -15,6 +15,7 @@ body {
   min-width: 320px;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 .lt-header {
   width: 100%;
@@ -59,7 +60,7 @@ body {
 }
 .lt-footer {
   width: 100%;
-  position: fixed;
+  position: absolute;
   height: 55px;
   background: #069;
   bottom: 0;

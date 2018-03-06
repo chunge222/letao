@@ -1,3 +1,7 @@
+.container1 {
+  overflow: hidden;
+  position: relative;
+}
 .mui-scroll-wrapper {
   top: 45px;
 }
