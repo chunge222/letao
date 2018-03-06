@@ -32,3 +32,5 @@ var tools = {
     return this.getSearchObj()[key];
   }
 }
+
+var lis=document.querySelectorAll('.lt-footer li')

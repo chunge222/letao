@@ -16,6 +16,7 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  padding-bottom:55px; 
 }
 .lt-header {
   width: 100%;
@@ -65,6 +66,7 @@ body {
   background-color: #fff;
   overflow: hidden;
   position: relative;
+  margin-bottom: 55px;
 }
 .lt-footer {
   width: 100%;

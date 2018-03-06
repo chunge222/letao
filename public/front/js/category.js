@@ -10,7 +10,7 @@ $(function () {
     success:function (info) {
       console.log(info);
 
-      $(".lt_category_l .mui-scroll").html( template("tpl_l", info)  );
+      $(".lt_category_l .mui-scroll").html( template("tmp-first", info)  );
 
       //渲染二级分类，默认渲染i==0的那个
       renderSecond(info.rows[0].id);
@@ -28,9 +28,9 @@ $(function () {
         id:id
       },
       success:function (info) {
-        console.log(info);
+        //console.log(info);
 
-        $(".lt_category_r .mui-scroll").html( template("tpl_r", info) );
+        $(".lt_category_r .mui-scroll").html( template("tmp-second", info) );
       }
     });
 
