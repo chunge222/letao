@@ -1,0 +1,61 @@
+
+.mui-scroll-wrapper{
+    top:45px;
+}
+.lt-nav{
+    width: 100%;
+    padding: 10px;
+    li{
+        width: 33.33%;
+        float: left;
+        a{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.lt-product{
+    width: 100%;
+    background: #fff;
+    li{
+        width: 48.5%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        a{
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-align: center;
+            background: transparent;
+           
+            img{
+            width: 100%;
+            z-index: -2;
+            }
+            p{
+                font-size: 12px;
+            }
+            .price{
+                color: red;
+                font-size: 14px;
+            }
+            .oldPrice{
+                text-decoration: line-through;
+                color:#ccc;
+                font-size: 14px;
+            }
+        }
+        
+    }
+    li:nth-child(odd){
+        float: left;
+    }
+    li:nth-child(even){
+        float: right;
+    }
+}
