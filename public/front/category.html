@@ -13,38 +13,42 @@
 
 </head>
 <body>
-
 <div class="container">
-  
   <header class="lt-header">
-    <div class="icon-left"><a href="javascript:void(0);"><span class="mui-icon mui-icon-back"></span></a></div>
+    <div class="icon-left"><a href="index.html"><span class="fa fa-home"></span></a></div>
     <div class="h-center"><p>乐淘云购</p></div>
     <div class="icon-right"><a href="#"><span class="fa fa-search"></span></a></div>
   </header>
-
-  <div class="lt_main">
-  
+  <div class="container1">
     <div class="lt_category_l">
-
       <div class="mui-scroll-wrapper">
-        <ul class="mui-scroll">
-          <!--挖个坑-->
-        </ul>
+          <div class="mui-scroll">
+              <ul class="mui-scroll" style="transform: translate3d(0px, 0px, 0px) translateZ(0px);">
+                  
+                  <li data-id="1" class="now"><a href="javascript:;">运动馆</a></li>
+                  
+                  <li data-id="2" class=""><a href="javascript:;">女士馆</a></li>
+                  
+                  <li data-id="3" class=""><a href="javascript:;">男士馆</a></li>
+                  
+                  <li data-id="4" class=""><a href="javascript:;">帆布馆</a></li>
+                  
+                  <li data-id="5" class=""><a href="javascript:;">户外管</a></li>
+                  
+                </ul>
+          </div>
       </div>
-
     </div>
     <div class="lt_category_r">
-      <div class="mui-scroll-wrapper">
-        <ul class="mui-scroll">
-          <!--挖个坑-->
-        </ul>
-      </div>
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+  
+            </div>
+        </div>
     </div>
-
   </div>
-
   <footer class="lt-footer">
-    <ul class="mui-clearfix">
+    <ul>
       <li class="now"><a href="#" ><span class="fa fa-home "></span><p>首页</p></a></li>
       <li><a href="#"><span class="fa fa-bars"></span><p>分类</p></a></li>
       <li><a href="#"><span class="fa fa-shopping-cart"></span><p>购物车</p></a></li>
@@ -52,30 +56,8 @@
       
     </ul>
   </footer>
-  
+
 </div>
-
-<script type="text/html" id="tpl_l">
-  {{each rows v i}}
-  <li data-id="{{v.id}}" class="{{i==0?'now':''}}"><a href="javascript:;">{{v.categoryName}}</a></li>
-  {{/each}}
-</script>
-
-<script type="text/html" id="tpl_r">
-  {{if rows.length == 0}}
-  <div class="category_tips">该分类下没有更多的品牌信息</div>
-  {{/if}}
-
-  {{each rows v i}}
-  <li>
-    <a href="#">
-      <img src="{{v.brandLogo?v.brandLogo:'images/none.png'}}" alt="">
-      <p>{{v.brandName}}</p>
-    </a>
-  </li>
-  {{/each}}
-</script>
-
 <script src="lib/mui/js/mui.js"></script>
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/zepto/zepto.min.js"></script>
