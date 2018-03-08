@@ -3,7 +3,7 @@
  */
 $(function () {
 
-
+// localStorage只能存字符串
   //用户获取lt_search_history对应的值，并且转换成一个数组，方便操作
   function getHistory(){
     //1.1 获取到lt_search_history对应的值，就是一个json字符串
